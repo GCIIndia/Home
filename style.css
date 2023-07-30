@@ -76,6 +76,9 @@ div#catalogue :nth-child(3){
     grid-area: c;
 }
 
+.btn > a {
+  color: #fff;
+}
 /* Style buttons */
 .btn {
   max-width: 50%;
@@ -90,7 +93,8 @@ div#catalogue :nth-child(3){
 
 /* Darker background on mouse-over */
 .btn:hover {
-  background-color: rgb(50, 81, 172);
+  background-color: rgb(96, 34, 117);
+  color:#333;
 }
 
 @media screen and (min-width: 370px) {
