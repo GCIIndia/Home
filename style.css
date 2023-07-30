@@ -51,7 +51,7 @@ footer {
 
 @media screen and (min-width: 370px) {
 footer {
-    position: relative;
+  position: relative;
   text-align: center;
   background-color: #333;
   margin-top: 2vh;
@@ -74,11 +74,11 @@ footer {
   }
 
   h1 {
-    font-size: 80vw;
+    font-size: 5vw;
   }
 
   h2 {
-    font-size: 7vw;
+    font-size: 5vw;
     padding-right: 5%;
   }
 
