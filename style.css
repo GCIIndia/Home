@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Roboto:wght@100&display=swap");
+
 main {
+  font-family: "Roboto", sans-serif;
   display: flex;
   align-items: center;
   text-align: center;
@@ -7,11 +10,13 @@ main {
 }
 
 h1 {
+  font-family: "Karla", sans-serif;
   font-size: 2vw;
   color: #333;
 }
 
 h2 {
+  font-family: "Karla", sans-serif;
   font-size: 3vw;
   color: #333;
   padding-right: 0%;
@@ -48,17 +53,56 @@ footer {
   color: white;
   text-align: center;
 }
+a {
+  text-decoration: none;
+}
+
+div#catalogue {
+  display: grid;
+  grid-template-areas:
+    "a a"
+    "b c";
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+div#catalogue :nth-child(1){
+    grid-area: a;
+}
+div#catalogue :nth-child(2){
+    grid-area: b;
+}
+div#catalogue :nth-child(3){
+    grid-area: c;
+}
+
+/* Style buttons */
+.btn {
+  max-width: 50%;
+  background-color: rgb(104, 118, 132);
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 3px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: rgb(50, 81, 172);
+}
 
 @media screen and (min-width: 370px) {
-footer {
-  position: relative;
-  text-align: center;
-  background-color: #333;
-  margin-top: 2vh;
-  color: #fff;
-  border-radius: 2px;
-  padding: 2% 0 2% 0;
-}
+  footer {
+    position: relative;
+    text-align: center;
+    background-color: #333;
+    margin-top: 2vh;
+    color: #fff;
+    border-radius: 2px;
+    padding: 2% 0 2% 0;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -74,11 +118,10 @@ footer {
   }
 
   h1 {
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
 
   h2 {
-    font-size: 5vw;
     padding-right: 5%;
   }
 
